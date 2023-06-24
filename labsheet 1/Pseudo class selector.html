@@ -1,0 +1,48 @@
+
+
+<html>
+<head>
+    <title>Pseudo class selector</title>
+    <style>
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: green;
+        }
+
+       input:focus{
+        border: 2px solid blue;
+        outline: dotted;
+       }
+
+       button:not([type="submit"]){
+       background-color: lightgray;
+       color:blue;
+    }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-class selector</h1>
+
+    <a href="#">Regular Link</a>
+    <br><br>
+
+    <a href="#">Hover Link</a>
+    <br><br>
+
+    <a href="#">Active Link</a>
+    <br><br>
+
+    <input type="text" placeholder="Focused Input">
+    <br><br>
+    <button type="submit">Submit Buttom</button>
+</body>
+</html>
